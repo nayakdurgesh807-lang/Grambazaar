@@ -1,0 +1,447 @@
+Master Prompt: Build gramBazaar — Local Products Marketplace Act as a senior website developer and UI/UX designer with 15 years of professional experience in building modern, mobile-responsive e-commerce and recommerce websites. Your task is to design and develop a complete, functional, single-page website called gramBazaar, a local marketplace that connects customers with locally sourced products from Shahdol, Madhya Pradesh. The website should be simple, trustworthy, visually appealing, easy to use, and optimized for mobile users. The primary goal is to help local sellers sell their products directly to customers through WhatsApp ordering without requiring a complicated payment gateway or customer account.
+
+Technology Requirements Build the website using standard web technologies:
+HTML5 for structure.
+
+CSS3 for styling, layouts, animations, and responsive design.
+
+Vanilla JavaScript for product filtering, quantity selection, cart functionality, and WhatsApp ordering.
+
+Use semantic HTML, accessible components, and clean, reusable code.
+
+Keep the project lightweight, fast-loading, and easy to maintain.
+
+Use separate HTML, CSS, and JavaScript files if appropriate, or provide a complete single-file version if requested. Do not require a backend, database, login system, or payment gateway for the initial version. 2. Brand Identity Website name: gramBazaar Brand purpose: Bringing Shahdol's local products closer to customers. Target audience: Local families, households, and customers who want to discover and purchase products from Shahdol and nearby areas. Brand personality:
+
+Local and authentic.
+
+Trustworthy and friendly.
+
+Modern but rooted in Indian culture.
+
+Simple, affordable, and customer-focused. Design direction:
+
+Create a premium, clean, modern Indian marketplace aesthetic.
+
+Use a natural color palette featuring forest green, warm cream, off-white, and subtle earthy accents.
+
+Use attractive product images, comfortable spacing, soft shadows, rounded cards, and readable typography.
+
+Use Devanagari-friendly fonts such as Noto Sans Devanagari.
+
+Avoid clutter, excessive gradients, unnecessary animations, and overly complicated layouts.
+
+Include a simple gramBazaar logo using typography and a small leaf, basket, or village-inspired icon. 3. Website Language The entire customer-facing website must be in Hindi. Use natural, simple Hindi that customers in Shahdol can easily understand. Examples:
+
+Home: होम
+
+Products: हमारे उत्पाद
+
+Search: उत्पाद खोजें
+
+Add to Cart: कार्ट में जोड़ें
+
+Order Now: अभी ऑर्डर करें
+
+My Cart: मेरी टोकरी
+
+Quantity: मात्रा
+
+Name: आपका नाम
+
+Mobile Number: मोबाइल नंबर
+
+Address: आपका पूरा पता
+
+Place Order: ऑर्डर भेजें
+
+Empty Cart: आपकी टोकरी अभी खाली है
+
+WhatsApp Order: व्हाट्सऐप से ऑर्डर करें Do not use English for the main customer-facing content except for the brand name gramBazaar, product names where appropriate, and technical or brand-specific terms. 4. Single-Page Website Structure Create one complete, responsive landing page with the following sections. A. Header and Navigation Include:
+
+gramBazaar logo.
+
+A short Hindi tagline: "शहडोल के स्थानीय उत्पाद, अब आपके घर तक।"
+
+Navigation links that scroll to sections on the same page.
+
+A product search icon or search bar.
+
+A shopping cart icon with a live item count.
+
+A mobile-friendly navigation menu.
+
+A clear WhatsApp ordering option. Keep the header clean and compact on mobile screens. B. Hero Section Design an attractive hero section that communicates the purpose of gramBazaar. Suggested Hindi content: Headline: "अपने शहर के उत्पाद, अपने घर तक।" Subheadline: "शहडोल के स्थानीय विक्रेताओं से जुड़ें और पसंदीदा उत्पाद आसानी से ऑर्डर करें।" Add two call-to-action buttons:
+
+"उत्पाद देखें"
+
+"व्हाट्सऐप से ऑर्डर करें" Use a high-quality, locally inspired visual featuring Indian local products, fresh produce, household essentials, or traditional goods. Do not claim that products are organic, certified, handmade, or locally manufactured unless those details are verified. C. Product Categories Add attractive category cards with suitable icons or images. Suggested categories:
+
+स्थानीय खाद्य पदार्थ
+
+किराना और दैनिक जरूरतें
+
+कृषि उत्पाद
+
+हस्तशिल्प और पारंपरिक वस्तुएँ
+
+घरेलू उपयोग की वस्तुएँ
+
+अन्य स्थानीय उत्पाद Make categories configurable so new categories can be added easily. When a customer selects a category, show only the relevant products. D. Product Listing Section Create a responsive product grid with premium-looking product cards. Each card should include:
+
+Product image.
+
+Product name in Hindi.
+
+Short product description.
+
+Price in Indian rupees (₹).
+
+Unit or pack size, such as प्रति किलो, प्रति पैकेट, or प्रति पीस.
+
+Optional discount price and original price.
+
+Quantity selector with minus (-) and plus (+) buttons.
+
+Quantity display.
+
+"कार्ट में जोड़ें" button.
+
+"सीधे ऑर्डर करें" button. Include sample products relevant to Shahdol's local marketplace, but mark sample prices and products as editable demo data. Do not invent real seller claims or present demo inventory as confirmed availability. Make product data manageable through a JavaScript array or configuration object so the seller can update names, images, prices, descriptions, stock status, and categories easily. E. Product Search and Filtering Implement working client-side functionality for:
+
+Searching products by name.
+
+Filtering products by category.
+
+Sorting products by price, low to high.
+
+Sorting products by price, high to low.
+
+Showing all available products.
+
+Displaying a friendly Hindi message when no products match the search. The search and filter features must work without reloading the page. 5. Shopping Cart Functionality Implement a functional shopping cart using JavaScript. Customers must be able to:
+
+Add products to the cart.
+
+Increase or decrease product quantities.
+
+Remove products from the cart.
+
+See each product's price and subtotal.
+
+See the total number of items.
+
+See the grand total in Indian rupees.
+
+Add the same product multiple times without creating duplicate cart entries.
+
+Continue shopping after adding items.
+
+View their cart in a clean side drawer, modal, or dedicated section.
+
+See an empty-cart message when no products are selected. The cart should update instantly without refreshing the page. Use localStorage to preserve the cart between page refreshes if practical, while ensuring invalid or outdated cart data is handled safely. Prevent customers from ordering zero or negative quantities. Respect product availability and any configured stock limits. 6. Customer Details and WhatsApp Ordering This is the most important feature of the website. Seller's WhatsApp number: +9368465315 Use this number for all product orders. Before generating the WhatsApp order, ask the customer to enter:
+
+ग्राहक का नाम
+
+मोबाइल नंबर
+
+पूरा डिलीवरी पता
+
+मोहल्ला, गाँव या क्षेत्र
+
+वैकल्पिक निर्देश, जैसे डिलीवरी संबंधी जानकारी Keep the form simple and mobile-friendly. Validate required fields and the mobile number before proceeding. A. Direct Product Order When the customer clicks "सीधे ऑर्डर करें":
+
+Open a small order form for customer details.
+
+Include the selected product name, quantity, unit price, and subtotal.
+
+Allow the customer to confirm the order.
+
+Generate a pre-filled WhatsApp message.
+
+Open WhatsApp using the seller's configured phone number. B. Cart Order When the customer clicks "व्हाट्सऐप से ऑर्डर करें" from the cart:
+
+Ask for the customer's details.
+
+Include every product in the cart.
+
+Include product quantities, units, prices, individual subtotals, and the grand total.
+
+Include the customer's name, mobile number, complete address, and optional instructions.
+
+Generate a single, well-formatted WhatsApp message containing the complete order.
+
+Open WhatsApp so the customer can review and send the message to the seller. C. WhatsApp Message Format Generate a Hindi message in the following format: नमस्ते gramBazaar! मुझे निम्नलिखित उत्पाद ऑर्डर करने हैं। ऑर्डर विवरण:
+
+[उत्पाद का नाम] — [मात्रा और यूनिट] कीमत: ₹[प्रति यूनिट कीमत] कुल: ₹[उप-योग]
+
+[अगला उत्पाद] कीमत: ₹[प्रति यूनिट कीमत] कुल: ₹[उप-योग] कुल उत्पाद: [आइटम की संख्या] ऑर्डर की कुल राशि: ₹[कुल राशि] ग्राहक का विवरण: नाम: [ग्राहक का नाम] मोबाइल: [मोबाइल नंबर] पता: [पूरा पता] क्षेत्र/गाँव: [क्षेत्र] अतिरिक्त निर्देश: [निर्देश या कोई नहीं] कृपया मेरे ऑर्डर की उपलब्धता, डिलीवरी शुल्क और अनुमानित डिलीवरी समय की पुष्टि करें। धन्यवाद! gramBazaar ग्राहक Use JavaScript's encodeURIComponent() to encode the message correctly before constructing the WhatsApp URL. Construct the URL using the format: https://wa.me/[SELLER_NUMBER]?text=[ENCODED_MESSAGE] Configure the seller's WhatsApp number in international format without the plus sign, spaces, or hyphens. The supplied number is +9368465315; verify the complete country code and subscriber number before production use rather than silently assuming a country code or changing the number. The WhatsApp message must reflect the actual selected products, quantities, customer details, and calculated totals. Do not hardcode example order details into the final message. Important: Opening WhatsApp does not automatically send the message. The customer must review and press Send in WhatsApp. 7. Checkout and Order Confirmation Before opening WhatsApp:
+
+Validate all required customer fields.
+
+Check that at least one product is selected.
+
+Display an order summary.
+
+Display the calculated total.
+
+Clearly explain that delivery charges and availability will be confirmed by the seller.
+
+Prevent accidental duplicate clicks while preparing the WhatsApp link. After opening WhatsApp, show a clear on-page message such as: "आपका ऑर्डर संदेश तैयार है। कृपया व्हाट्सऐप पर संदेश देखकर भेजें।" Do not falsely claim that an order has been successfully placed or received merely because WhatsApp opened. Since the initial version has no backend, do not claim that the seller automatically receives orders, that stock is reserved, or that payment has been completed. 8. Additional Features and Suggestions Include these improvements where appropriate:
+
+Sticky mobile cart bar: Show the number of items and cart total at the bottom of the screen when the cart contains products.
+
+Local marketplace message: Emphasize supporting Shahdol's local sellers.
+
+Popular products: Add a configurable featured-products section.
+
+New arrivals: Provide an optional section for recently added products.
+
+Delivery information: Add a section explaining that the seller will confirm delivery availability, charges, and estimated delivery time.
+
+Trust section: Include honest statements about easy ordering, direct seller communication, and local shopping.
+
+Frequently asked questions: Explain how to order, how delivery works, how payment is arranged, and how to contact the seller.
+
+Contact section: Provide the seller's verified WhatsApp contact and a simple contact option.
+
+Footer: Include the brand name, navigation links, contact details, and privacy information.
+
+Loading and empty states: Display helpful messages when product images are loading, search results are empty, or the cart is empty.
+
+Accessibility: Add descriptive image alt text, visible focus indicators, accessible labels, and sufficient color contrast.
+
+SEO: Add a relevant page title, meta description, semantic headings, and Open Graph metadata.
+
+Performance: Optimize images, avoid unnecessary JavaScript libraries, and minimize layout shifts.
+
+Privacy: Collect only the customer information necessary to process an order. Explain how it is used, and avoid storing personal details unnecessarily. Do not add fake customer reviews, fabricated ratings, false scarcity indicators, or unsupported delivery promises. 9. Responsive Design Requirements The website must work smoothly on:
+
+Android smartphones.
+
+iPhones.
+
+Tablets.
+
+Laptops.
+
+Desktop computers. Use a mobile-first approach. On mobile:
+
+Display product cards in a compact two-column grid where space permits, falling back to one column on narrow screens.
+
+Keep buttons large enough for touch interactions.
+
+Make the cart and quantity controls easy to operate.
+
+Avoid horizontal scrolling.
+
+Use readable Hindi typography.
+
+Ensure forms fit within the screen.
+
+Keep the main order action visible and easy to access.
+
+Use a sticky bottom cart summary when appropriate. On larger screens:
+
+Use a balanced product grid.
+
+Keep content centered within a sensible maximum width.
+
+Maintain consistent spacing and typography.
+
+Avoid stretching product cards or text excessively. 10. Visual Design and User Experience The final design should look like a real, premium Indian local-commerce brand rather than a generic template. Follow these principles:
+
+Clear visual hierarchy.
+
+Consistent spacing.
+
+Consistent button styles.
+
+Well-aligned product cards.
+
+High-quality product imagery.
+
+Subtle transitions and hover effects.
+
+Minimal pop-ups.
+
+Clear cart and checkout flows.
+
+Helpful Hindi validation messages.
+
+A polished experience even when images or optional features are unavailable. Avoid overloading the page with too many sections. Keep it focused on browsing products and placing WhatsApp orders. 11. Suggested File Structure Organize the project as follows:
+
+index.html — Page structure and Hindi content.
+
+style.css — Responsive layout and visual design.
+
+script.js — Product data, search, filtering, cart, validation, and WhatsApp ordering.
+
+assets/ — Logo and product images. If delivering a single HTML file is more convenient, include the CSS and JavaScript in that file without sacrificing code quality. 12. Testing Requirements Before completing the website, verify that:
+
+The website loads correctly on mobile and desktop.
+
+All customer-facing content is in Hindi.
+
+Search and category filters work.
+
+Quantity controls correctly update product totals.
+
+Cart additions, removals, and quantity changes work.
+
+The grand total is calculated correctly.
+
+Direct product orders include the correct product details.
+
+Cart orders include every selected product.
+
+Customer details are included in the WhatsApp message.
+
+Special characters and Hindi text are URL-encoded correctly.
+
+Invalid forms cannot proceed.
+
+Empty carts cannot be ordered.
+
+The WhatsApp destination is configurable and verified.
+
+No payment, order receipt, or delivery confirmation is falsely reported.
+
+No major horizontal overflow or unusable controls appear on small screens. 13. Final Deliverables Provide:
+
+Complete working website code.
+
+All HTML, CSS, and JavaScript files.
+
+Sample editable product data relevant to Shahdol.
+
+A functional product grid and shopping cart.
+
+Working direct-product and cart-based WhatsApp ordering.
+
+A responsive Hindi customer-details form.
+
+Clear instructions for replacing demo products, prices, and images.
+
+Instructions for configuring the seller's correct WhatsApp number.
+
+Instructions for previewing and hosting the website.
+
+A short explanation of the additional features implemented. Do not stop at a mockup, wireframe, or design description. Build the actual functional website. Final objective: Create gramBazaar as a clean, premium, fast, mobile-first Hindi marketplace that helps customers discover Shahdol's local products, adjust quantities, add products to a cart, enter their details, and send a complete order message to the seller through WhatsApp. Prioritize simplicity, trust, usability, and a smooth customer ordering experience.
+
+
+gramBazaar — शहडोल का स्थानीय ई-कॉमर्स मार्केटप्लेस तैयार है
+gramBazaar का संपूर्ण, कार्यात्मक एकल-पृष्ठ (Single-Page) मार्केटप्लेस gramBazaar - शहडोल का स्थानीय बाज़ार सफलतापूर्वक निर्मित किया गया है। यह प्लेटफ़ॉर्म शहडोल, मध्य प्रदेश के स्थानीय परिवारों और उत्पादकों को सीधे व्हाट्सऐप आधारित ऑर्डरिंग प्रणाली से जोड़ता है।
+
+🌟 प्रमुख विशेषताएँ एवं कार्यान्वयन:
+ब्रांड पहचान एवं डिज़ाइन भाषा (Design Identity):
+
+लोगो: प्राकृतिक पत्ती, पारंपरिक डलिया और आधुनिक अक्षरांकन युक्त आधिकारिक लोगो (gramBazaar Logo)।
+रंग पट्टिका: वन हरित (Forest Green #1b4332, #2d6a4f), सौम्य क्रीम व ऑफ़-व्हाइट (#f8f9ff), और माटी के रंग (#e76f51, #d4a373)।
+टाइपोग्राफी: देवनागरी के लिए अनुकूलित स्पष्ट एवं पठनीय फ़ॉन्ट (Noto Sans Devanagari / Plus Jakarta Sans)।
+पूर्णतः हिंदी उपयोगकर्ता इंटरफ़ेस (100% Hindi UI):
+
+शीर्ष से पादलेख (Footer) तक सभी संदेश, बटन, उत्पाद विवरण, फ़ील्ड्स और अलर्ट्स प्राकृतिक और सहज हिंदी में तैयार किए गए हैं (उदा. "उत्पाद देखें", "मेरी टोकरी", "कार्ट में जोड़ें", "सीधे ऑर्डर करें", "व्हाट्सऐप से ऑर्डर करें")।
+वास्तविक स्थानीय उत्पाद सूची (Shahdol-Specific Catalog):
+
+शहडोल एवं विंध्य क्षेत्र के विशिष्ट उत्पाद शामिल किए गए हैं:
+शहडोल कोदो बाजरा (Kodo Millet) — ₹120 / प्रति किलो
+देसी गाय का बिलौना घी — ₹650 / 500 मिली
+अमरकंटक शुद्ध महुआ शहद — ₹380 / 500 ग्राम
+हस्तनिर्मित मिट्टी की हाँडी — ₹250 / प्रति पीस
+बघेलखंडी आम का पारंपरिक अचार — ₹180 / 400 ग्राम
+बिना पॉलिश चना दाल — ₹95 / प्रति किलो
+प्राकृतिक महुआ सूखा फूल — ₹140 / प्रति किलो
+हस्तनिर्मित बाँस की टोकरी — ₹180 / प्रति पीस
+सभी उत्पाद डेमो डेटा के रूप में कॉन्फ़िगर किए गए हैं जिन्हें जावास्क्रिप्ट एरे में सरलता से संपादित किया जा सकता है।
+लाइव फ़िल्टरिंग, खोज एवं सॉर्टिंग (Instant Search & Filter):
+
+श्रेणी अनुसार फ़िल्टरिंग (खाद्य पदार्थ, किराना, कृषि, हस्तशिल्प, घरेलू सामान)।
+बिना पेज रीलोड किए त्वरित नाम खोज (Instant Search)।
+मूल्य के आधार पर क्रमबद्धता (कम से ज़्यादा, ज़्यादा से कम)।
+कार्यात्मक टोकरी (Dynamic Shopping Cart):
+
+मात्रा चयनकर्ता (- और +) के साथ रियल-टाइम उप-योग गणना।
+साइड स्लाइड-आउट ड्रावर (Side Cart Drawer) और हेडर में लाइव काउंटर बैज।
+खाली टोकरी होने पर स्पष्ट व विनम्र हिंदी संदेश।
+पूर्ण व्हाट्सऐप ऑर्डरिंग प्रणाली (WhatsApp Checkout System):
+
+विक्रेता नंबर: +9368465315 (लिंक: https://wa.me/9368465315?text=...)।
+ग्राहक विवरण फ़ॉर्म: नाम, मोबाइल नंबर, पता और क्षेत्र/गाँव का सत्यापन (Validation)।
+दोहरा ऑर्डर मोड:
+सीधे ऑर्डर करें: एकल उत्पाद के लिए त्वरित चेकआउट।
+टोकरी से ऑर्डर करें: संपूर्ण टोकरी का समेकित बिल।
+व्हाट्सऐप संदेश प्रारूप:
+नमस्ते gramBazaar!
+मुझे निम्नलिखित उत्पाद ऑर्डर करने हैं।
+ऑर्डर विवरण:
+- [उत्पाद का नाम] — [मात्रा] कीमत: ₹[...] कुल: ₹[...]
+कुल राशि: ₹[...]
+ग्राहक का विवरण: नाम: [...] | मोबाइल: [...] | पता: [...]
+कृपया उपलब्धता और डिलीवरी शुल्क की पुष्टि करें। धन्यवाद!
+सुरक्षित URL एन्कोडिंग (encodeURIComponent) के साथ सटीक संदेश निर्माण।
+चेकआउट के बाद ऑन-पेज पारदर्शी सूचना: "आपका ऑर्डर संदेश तैयार है। कृपया व्हाट्सऐप पर संदेश देखकर भेजें।"
+विश्वास एवं सहायता अनुभाग (Trust & FAQ):
+
+3-चरणीय ऑर्डर मार्गदर्शिका ("ऑर्डर कैसे करें?")।
+पारदर्शिता नोट: कोई झूठा भुगतान दावा नहीं; डिलीवरी शुल्क और उपलब्धता की पुष्टि विक्रेता द्वारा की जाती है।
+अक्सर पूछे जाने वाले सवाल (FAQ Accordion) एवं विक्रेता संपर्क विवरण।
+
+Gram Bazaar
+Button
+
+gramBazaar - शहडोल का स्थानीय बाज़ार
+
+Add the mitti ka matka lakdi ka samaan la 5 product in website for sale
+
+
+gramBazaar वेबसाइट में 'मिट्टी का मटका' एवं 'लकड़ी के सामान' के 5 नए स्थानीय उत्पाद सफलतापूर्वक जोड़ दिए गए हैं!
+आपकी वेबसाइट gramBazaar (शहडोल का स्थानीय बाज़ार) में स्थानीय कुम्हारों एवं काष्ठ कारीगरों द्वारा हस्तनिर्मित 5 नए उत्पाद उनकी प्रामाणिक तस्वीरों, विवरण और व्हाट्सऐप ऑर्डरिंग कार्यप्रणाली के साथ लाइव कर दिए गए हैं:
+
+🏺 जोड़े गए 5 नए उत्पाद (New Products Added):
+हस्तनिर्मित मिट्टी का मटका (Terracotta Mitti Matka)
+
+तस्वीर: प्रामाणिक नक्काशीदार पारंपरिक लाल मिट्टी का मटका
+विवरण: शहडोल के स्थानीय कुम्हारों द्वारा शुद्ध चिकनी मिट्टी से तैयार प्राकृतिक शीतल जल पात्र।
+मूल्य: ₹220 ₹280 (21% छूट) | प्रति पीस (10 लीटर)
+श्रेणी: हस्तशिल्प और पारंपरिक वस्तुएँ
+शीशम की लकड़ी की मसाला दानी (Wooden Spice Box)
+
+तस्वीर: पॉलिश शीशम की लकड़ी की 7 खानों वाली ग्लास-लिड मसालादानी
+विवरण: पारंपरिक नक्काशीदार शीशम की लकड़ी से बनी टिकाऊ व सुरुचिपूर्ण मसाला पेटी।
+मूल्य: ₹480 ₹599 (20% छूट) | प्रति पीस (ग्लास लिड युक्त)
+श्रेणी: घरेलू उपयोग की वस्तुएँ
+प्राकृतिक सागौन चकला-बेलन (Teak Wood Chakla Belan)
+
+तस्वीर: चिकना, हाथ से तराशा हुआ प्राकृतिक टीक वुड चकला-बेलन सेट
+विवरण: हाथ से तराशा हुआ चिकना और टिकाऊ सागौन की लकड़ी का चकला बेलन सेट।
+मूल्य: ₹340 ₹420 (19% छूट) | प्रति सेट (चकला + बेलन)
+श्रेणी: घरेलू उपयोग की वस्तुएँ
+मिट्टी के चाय कुल्हड़ सेट (Clay Chai Kulhad - 6 Pcs)
+
+तस्वीर: 6 प्रामाणिक टेराकोटा कुल्हड़ों का व्यवस्थित सेट
+विवरण: देसी चाय के सौंधे स्वाद के लिए प्राकृतिक मिट्टी से पके हुए खुशबूदार कुल्हड़।
+मूल्य: ₹150 ₹190 (21% छूट) | 6 पीस का सेट
+श्रेणी: हस्तशिल्प और पारंपरिक वस्तुएँ
+लकड़ी की पारंपरिक ओखली-मूसल (Wooden Mortar & Pestle)
+
+तस्वीर: पारंपरिक हस्तनिर्मित काष्ठ ओखली और मूसल
+विवरण: मसाले व जड़ी-बूटी कूटने हेतु मजबूत देसी लकड़ी से हस्तनिर्मित ओखली और मूसल।
+मूल्य: ₹290 ₹360 (19% छूट) | प्रति सेट
+श्रेणी: घरेलू उपयोग की वस्तुएँ
+🛒 सिस्टम और कार्यप्रणाली अपडेट्स:
+लाइव कैटलॉग अपडेट: उत्पाद काउंटर अब कुल 13 उत्पाद उपलब्ध दर्शाता है।
+श्रेणी फ़िल्टरिंग: 'हस्तशिल्प और पारंपरिक वस्तुएँ' या 'घरेलू उपयोग की वस्तुएँ' टैब पर क्लिक करने पर ये उत्पाद तुरंत फ़िल्टर होते हैं।
+व्हाट्सऐप चेकआउट इंटीग्रेशन: 'कार्ट में जोड़ें' और 'सीधे ऑर्डर करें' दोनों विकल्पों के माध्यम से इन नए उत्पादों का नाम, मात्रा, दर और कुल योग सही-सही विक्रेता के व्हाट्सऐप (+9368465315) ऑर्डर संदेश में स्वतः जुड़ जाता है।
+
+Authentic Indian traditional terracotta clay water pot (Mitti ka Matka) with carved pattern and lid, handcrafted earthenware, earthen pot on rustic wooden surface, warm studio lighting, clean background
+
+Traditional Indian handcrafted wooden rolling pin and board set (Lakdi ka Chakla Belan), smooth polished natural teak wood, authentic artisanal kitchenware, clean product photo
+
+Handcrafted Indian wooden spice box (Lakdi ka Masala Dani / Spice Dabba) with glass lid showing authentic spices inside, polished sheesham wood craftsmanship, warm natural lighting, product photography
+
+Traditional Indian hand-carved wooden mortar and pestle (Lakdi ka Okhli Musal / Kharal) for spices, handcrafted rustic wood, high quality artisan product photography
+
+Artisanal Indian clay cups (mitti ke kulhad) set, rustic terracotta tea cups arranged neatly, natural earthenware, warm lighting, local handicraft product photography
+
+gramBazaar - शहडोल का स्थानीय बाज़ार (मिट्टी व लकड़ी के हस्तशिल्प सहित)
